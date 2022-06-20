@@ -62,7 +62,6 @@ describe("NFTMarketplace", function () {
 
   describe("Making marketplace items", function () {
     let price = 1
-    let result 
     beforeEach(async function () {
       // addr1 mints an nft
       await nft.connect(addr1).mint(URI)

@@ -16,14 +16,14 @@ const Navigation = ({ web3Handler, account }) => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link size ='lg' as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link size ='lg' as={Link} to="/create">Create</Nav.Link>
+                        <Nav.Link size ='lg' as={Link} to="/create">Sell</Nav.Link>
                         <Nav.Link size ='lg' as={Link} to="/my-items">My Items</Nav.Link>
                         <Nav.Link size ='lg' as={Link} to="/my-purchases">My Purchases</Nav.Link>
                     </Nav>
                     <Nav>
                         {account ? (
                             <Nav.Link
-                                href={`https://etherscan.io/address/${account}`}
+                                href={`https://mumbai.polygonscan.com/address/${account}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="button nav-button btn-sm mx-4">

@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { ethers } from "ethers"
 import { Row, Col, Card, Button } from 'react-bootstrap'
 
 const Home = ({ marketplace, nft }) => {
   const [loading, setLoading] = useState(true)
   const [items, setItems] = useState([])
-  const loadMarketplaceItems = async () => {
+  const loadMarketplaceItems = useCallback(async () => {
     // Load all unsold items
     const itemCount = await marketplace.itemCount()
     let items = []
@@ -32,7 +32,7 @@ const Home = ({ marketplace, nft }) => {
     }
     setLoading(false)
     setItems(items)
-  }
+  }, [marketplace, nft])
 
   const buyMarketItem = async (item) => {
     await (await marketplace.purchaseItem(item.itemID, { value: item.totalPrice })).wait()
@@ -41,7 +41,7 @@ const Home = ({ marketplace, nft }) => {
 
   useEffect(() => {
     loadMarketplaceItems()
-  }, [])
+  }, [loadMarketplaceItems])
   if (loading) return (
     <main style={{ padding: "1rem 0" }}>
       <h2>No items</h2>
@@ -65,7 +65,7 @@ const Home = ({ marketplace, nft }) => {
                   <Card.Footer>
                     <div className='d-grid'>
                       <Button onClick={() => buyMarketItem(item)} variant="primary" size="lg">
-                        Buy for {ethers.utils.formatEther(item.totalPrice)} ETH
+                        Buy for {ethers.utils.formatEther(item.totalPrice)} MATIC
                       </Button>
                     </div>
                   </Card.Footer>
