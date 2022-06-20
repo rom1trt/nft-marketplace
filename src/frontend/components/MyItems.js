@@ -2,26 +2,6 @@ import { useState, useEffect } from 'react'
 import { ethers } from "ethers"
 import { Row, Col, Card } from 'react-bootstrap'
 
-function renderSoldItems(items) {
-  return (
-    <>
-      <h2>Sold</h2>
-      <Row xs={1} md={2} lg={4} className="g-4 py-3">
-        {items.map((item, idx) => (
-          <Col key={idx} className="overflow-hidden">
-            <Card>
-              <Card.Img variant="top" src={item.image} />
-              <Card.Footer>
-                Retail price: {ethers.utils.formatEther(item.totalPrice)} MATIC - Received {ethers.utils.formatEther(item.price)} MATIC
-              </Card.Footer>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </>
-  )
-}
-
 export default function MyListedItems({ marketplace, nft, account }) {
   const [loading, setLoading] = useState(true)
   const [listedItems, setListedItems] = useState([])
@@ -37,7 +17,7 @@ export default function MyListedItems({ marketplace, nft, account }) {
         if (i.seller.toLowerCase() === account) {
           // get uri url from nft contract
           const URI = await nft.tokenURI(i.tokenID)
-          // use uri to fetch the nft metadata stored on ipfs 
+          // use uri to fetch the nft metadata stored on ipfs
           const response = await fetch(URI)
           const metadata = await response.json()
           // get total price of item (item price + fee)
@@ -71,7 +51,7 @@ export default function MyListedItems({ marketplace, nft, account }) {
     <div className="flex justify-center">
       {listedItems.length > 0 ?
         <div className="px-5 py-3 container">
-            <h2>Listed</h2>
+            <h2>Listed & Sold</h2>
           <Row xs={1} md={2} lg={4} className="g-4 py-3">
             {listedItems.map((item, idx) => (
               <Col key={idx} className="overflow-hidden">
@@ -82,7 +62,6 @@ export default function MyListedItems({ marketplace, nft, account }) {
               </Col>
             ))}
           </Row>
-            {soldItems.length > 0 && renderSoldItems(soldItems)}
         </div>
         : (
           <main style={{ padding: "1rem 0" }}>
