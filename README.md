@@ -127,11 +127,17 @@ To get a local copy up and running follow these simple example steps.
 
 #### 2. Sign up/Log in on [Alchemy](https://www.alchemy.com/) and create a new project with Polygon Mumbai as network
 
-#### 2. Deploy smart contracts on Mumbai Testnet from the terminal
+#### 3. Add your Alchemy API key and Metamask private key in the .env file
+
+#### 4. Refresh environment variables
+
+`source .env`
+
+#### 5. Deploy smart contracts on Mumbai Testnet from the terminal
 
 `npx hardhat run src/backend/scripts/deploy.js --network mumbai`
 
-#### 3. Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
+#### 6. Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
 
 ### Features
 
