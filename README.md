@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/rom1trt/nft-marketplace">
-    <img src="img/opensealogo.png" alt="Logo" width="1100" height="250">
+    <img src="img/opensealogo.png" alt="Logo" width="1200" height="250">
   </a>
 
   <h3 align="center"> DApp NFT Marketplace (OpenSea lookalike)</h3>
