@@ -35,7 +35,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installations">Installations</a></li>
         <li><a href="#features">Features</a></li>
       </ul>
     </li>
@@ -89,7 +89,9 @@ To get a local copy up and running follow these simple example steps.
 - [Install Metamask](https://metamask.io/)
 - Install the network Hardhat from Metamask Wallet(Settings -> Networks -> Add Network)
 
-### Installation
+## Installations
+
+### Local Installation
 
 #### 1. Clone the repository
 
@@ -107,17 +109,35 @@ To get a local copy up and running follow these simple example steps.
 - Connect your metamask to hardhat blockchain, network 127.0.0.1:8545.
 - If you have not added hardhat to the list of networks on your metamask, open up a browser, click the fox icon, then click the top center dropdown button that lists all the available networks then click add networks. A form should pop up. For the "Network Name" field enter "Hardhat". For the "New RPC URL" field enter "http://127.0.0.1:8545". For the chain ID enter "31337". Then click save.
 
-#### 4. Deploy smart contracts locally (local host)
-
-`npx hardhat run src/backend/scripts/deploy.js --network localhost`
-
-#### 5. Run tests
+#### 4. Run tests
 
 `npx hardhat test`
 
-#### 6. Launch frontend locally (localhost)
+#### 5. Deploy smart contracts locally (local host) from the terminal
+
+`npx hardhat run src/backend/scripts/deploy.js --network localhost`
+
+#### 6. Launch Frontend locally (localhost)
 
 `npm run start`
+
+### Installation Polygon Testnet (Mumbai)
+
+#### 1. Repeat steps 1-2
+
+#### 2. Sign up/Log in on [Alchemy](https://www.alchemy.com/) and create a new project with Polygon Mumbai as network
+
+#### 3. Add your Alchemy API key and Metamask private key in the .env file
+
+#### 4. Refresh environment variables
+
+`source .env`
+
+#### 5. Deploy smart contracts on Mumbai Testnet from the terminal
+
+`npx hardhat run src/backend/scripts/deploy.js --network mumbai`
+
+#### 6. Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
 
 ### Features
 
