@@ -89,6 +89,8 @@ To get a local copy up and running follow these simple example steps.
 - [Install Metamask](https://metamask.io/)
 - Install the network Hardhat from Metamask Wallet(Settings -> Networks -> Add Network)
 
+### Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
+
 ## Installations
 
 ### Local Installation
@@ -136,8 +138,6 @@ To get a local copy up and running follow these simple example steps.
 #### 5. Deploy smart contracts on Mumbai Testnet from the terminal
 
 `npx hardhat run src/backend/scripts/deploy.js --network mumbai`
-
-#### 6. Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
 
 ### Features
 
