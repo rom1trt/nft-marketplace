@@ -34,11 +34,12 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installations">Installations</a></li>
         <li><a href="#features">Features</a></li>
       </ul>
     </li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -67,11 +68,10 @@ MY PURCHASES
 
 ### Built With
 
-- [Solidity](https://www.solidity.io/)
-- [Javascript](https://www.javascript.com/)
-- [Ethers.js](https://docs.ethers.io/v5/)
-- [Hardhat](https://hardhat.org/)
-- [IPFS](https://ipfs.io/)
+* [![Solidity](https://img.shields.io/badge/solidity-grey?style=for-the-badge&logo=solidity&logoColor=white)](https://www.solidity.io/)
+* [![Javascript](https://img.shields.io/badge/javascript-c2a90f?style=for-the-badge&logo=javascript&logoColor=white)](https://www.javascript.com/)
+* [![IPFS](https://img.shields.io/badge/ipfs-00add1?style=for-the-badge&logo=ipfs&logoColor=white)](https://ipfs.io/)
+* [![Hardhat](https://img.shields.io/badge/hardhat-yellow?style=for-the-badge&logo=hardhat&logoColor=white)](https://hardhat.org/)
 
 <!-- GETTING STARTED -->
 
@@ -80,14 +80,14 @@ MY PURCHASES
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Requirements
+### Prerequisites
 
-- [Install NodeJS](https://nodejs.org/en/download/)
+* [![Install NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/)
 - Install Hardhat `npm install hardhat --save-dev hardhat`
-- [Install Metamask](https://metamask.io/)
-- Install the network Hardhat from Metamask Wallet(Settings -> Networks -> Add Network)
+* [![Install Metamask](https://img.shields.io/badge/Metamask-orange?style=for-the-badge&logo=Metamask&logoColor=white)](https://metamask.io/)
+- Install the network Hardhat from Metamask Wallet (Settings -> Networks -> Add Network)
 
-### Launch [Frontend](https://nft-marketplace-eight-snowy.vercel.app/)
+### Click [![Frontend](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nft-marketplace-eight-snowy.vercel.app/) to launch frontend
 
 ## Installations
 
@@ -142,3 +142,8 @@ To get a local copy up and running follow these simple example steps.
 - Mint an ERC721 nft and list it on the marketplace
 - Buy the any assets listed on the marketplace
 - Sell the NFTs you own
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
