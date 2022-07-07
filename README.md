@@ -80,14 +80,14 @@ MY PURCHASES
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+### Click on [![Frontend](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nft-marketplace-eight-snowy.vercel.app/) to launch website
+
 ### Prerequisites
 
 * [![Install NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/)
 - Install Hardhat `npm install hardhat --save-dev hardhat`
 * [![Install Metamask](https://img.shields.io/badge/Metamask-orange?style=for-the-badge&logo=Metamask&logoColor=white)](https://metamask.io/)
 - Install the network Hardhat from Metamask Wallet (Settings -> Networks -> Add Network)
-
-### Click [![Frontend](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nft-marketplace-eight-snowy.vercel.app/) to launch frontend
 
 ## Installations
 
