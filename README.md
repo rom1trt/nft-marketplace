@@ -85,9 +85,10 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 * [![Install NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/)
-- Install Hardhat `npm install hardhat --save-dev hardhat`
+* [![Hardhat](https://img.shields.io/badge/hardhat-yellow?style=for-the-badge&logo=hardhat&logoColor=white)](https://hardhat.org/) <br />
+`npm install hardhat --save-dev hardhat`
 * [![Install Metamask](https://img.shields.io/badge/Metamask-orange?style=for-the-badge&logo=Metamask&logoColor=white)](https://metamask.io/)
-- Install the network Hardhat from Metamask Wallet (Settings -> Networks -> Add Network)
+* ```Install the network Hardhat from Metamask Wallet (Settings -> Networks -> Add Network)```
 
 ## Installations
 
